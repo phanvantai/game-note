@@ -1,45 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Support - Game Note</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container {
-      text-align: center;
-      background-color: white;
-      padding: 20px;
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      color: #555;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the ultimate PES community app. Create leagues, track statistics, and join a vibrant community of players.">
+    <title>Game Note - PES Community App</title>
+    <link rel="icon" href="ic_launcher.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #ffffff;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .hero-image img {
+            max-width: 600px;  /* Set the max width */
+            max-height: 500px; /* Set the max height */
+            width: 100%; /* Ensures it is responsive */
+            height: auto;
+            border-radius: 10px;
+            /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .download-buttons a {
+            display: inline-block;
+            height: 50px;  /* Set fixed height */
+        }
+
+        .download-buttons img {
+            height: 100%;               /* Ensure the image uses the full height of the parent */
+            width: auto;                /* Automatically adjust the width to maintain aspect ratio */
+            object-fit: contain;        /* Ensure the image fits within the container without distortion */
+        }
+        .support-section {
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+        .support-section h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Support for Game Note</h1>
-    <p>If you need assistance or have any questions, please contact us via email:</p>
-    <p><a href="mailto:taipv.swe@gmail.com">taipv.swe@gmail.com</a></p>
-  </div>
+    <div class="container">
+        <h1>Welcome to Game Note</h1>
+
+        <p>Trải nghiệm ứng dụng cộng đồng bóng đá và esport PES đỉnh cao</p>
+        <p>Tạo các giải đấu, theo dõi số liệu thống kê và tham gia cộng đồng người chơi sôi động</p>
+
+        <div class="hero-image">
+          <img src="gamenote.png" alt="Game Note App">
+        </div>
+
+        <div class="download-buttons">
+            <a href="https://apps.apple.com/app/game-note/id6443969710" target="_blank">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.november.game_note" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+            </a>
+        </div>
+    </div>
+
+    <div class="container support-section">
+        <h1>Support for Game Note</h1>
+        <p>If you need assistance or have any questions, please contact us via email:</p>
+        <p><a href="mailto:taipv.swe@gmail.com">taipv.swe@gmail.com</a></p>
+    </div>
+
+    <footer>
+        &copy; 2024 Tai Phan Van. All rights reserved.
+    </footer>
 </body>
 </html>
